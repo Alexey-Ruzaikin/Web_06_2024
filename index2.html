@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Lab</title>
+    <link rel="stylesheel" href="index.css"/>
+    </head>
+    <body>
+        <div id="task1">
+            <div style="font-weight: bold">Демонстрация №1</div>
+            <div>
+                function task1(){<br/>
+                &nbsp;&nbsp;    let arr1=[];<br/>
+                &nbsp;&nbsp;    let arr2= new Array();<br/>
+                &nbsp;&nbsp;    let arr3 = Array.from("Hello");<br/>}
+            </div>
+            <div>
+                <button onclick=executeDemo1()>Выполнить</button>
+            </div>
+        </div>
+
+        <div id="tests"></div>
+        <button onclick="checkTest()">Проверить</button>
+        <div id="result"></div>
+
+        <div>
+            <div>Тема</div>
+            <div>
+                <input type="radio" 
+                name="theme" 
+                id="light" 
+                value="light" 
+                onclick="toggleTheme(this)"/>
+                <label for="light">Светлая</label>
+        
+            </div>
+            <div>
+                <input type="radio" 
+                name="theme" 
+                id="dark" 
+                value="dark" 
+                onclick="toggleTheme(this)"/>
+                <label for="dark">темная</label>
+        
+            </div>
+        </div>
+    </body>
+    <script src="index3.js"></script>
+</html>
